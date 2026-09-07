@@ -1,0 +1,121 @@
+================================================================================
+PRAC 02 —  ASSIGNMENT GUIDE
+Data Wrangling & Exploratory Data Analysis
+================================================================================
+
+1. OBJECTIVES
+--------------------------------------------------------------------------------
+
+Students must study the two lab notebooks, complete Bai01 and Bai02 independently,
+then push the work to Git using the required filenames.
+
+
+2. REQUIRED READING
+--------------------------------------------------------------------------------
+
+  (1) Lab-Data-Wrangling.ipynb
+      Data Wrangling — chuyển dữ liệu từ dạng thô sang dạng phù hợp để phân tích.
+
+      Nguyên lý cần nắm:
+      - Identify and handle missing values
+        (phát hiện missing, thay thế bằng mean / mode, hoặc drop hàng)
+      - Correct data format (đổi kiểu dữ liệu đúng: int, float, object)
+      - Data standardization (ví dụ: mpg → L/100km)
+      - Data normalization (centering / scaling)
+      - Binning (chia biến liên tục thành khoảng)
+      - Indicator / dummy variables (biến chỉ thị cho biến phân loại)
+
+  (2) Lab_Exploratory-Data-Analysis.ipynb
+      Exploratory Data Analysis (EDA) — tìm đặc trưng ảnh hưởng mạnh đến giá xe.
+
+      Nguyên lý cần nắm:
+      - Chọn phương pháp trực quan phù hợp theo kiểu biến
+        (số liên tục vs. phân loại)
+      - Continuous numerical variables: scatter plot, hồi quy tuyến tính
+      - Categorical variables: box plot
+      - Descriptive statistical analysis (describe, value_counts)
+      - Grouping (groupby)
+      - Correlation vs. causation (Pearson correlation, p-value)
+      - ANOVA (so sánh trung bình giữa các nhóm)
+
+Lưu ý: hai file lab dùng để HỌC. Không nộp hai file lab này.
+
+
+3. BÀI TẬP CẦN LÀM / ASSIGNMENTS
+--------------------------------------------------------------------------------
+  Bai01.ipynb  — Data Analysis with Python (EDA, dữ liệu ô tô)
+                 Áp dụng nguyên lý từ Lab_Exploratory-Data-Analysis.ipynb
+                 Dataset: automobileEDA.csv
+                 Nguồn Kaggle (đúng tên file, bản đã wrangling):
+                   https://www.kaggle.com/datasets/iremakdogan/automobileeda
+                   https://www.kaggle.com/datasets/sohamnimbalkar/automobileeda
+                 Bản gốc UCI (Automobile_data.csv, chưa EDA):
+                   https://www.kaggle.com/datasets/toramky/automobile-dataset
+                 Câu hỏi chính: đặc trưng nào ảnh hưởng mạnh nhất đến giá xe?
+
+                 Nội dung:
+                 1. Import data
+                 2. Analyzing individual feature patterns using visualization
+                 3. Descriptive statistical analysis
+                 4. Basics of grouping
+                 5. Correlation and causation
+                 6. ANOVA
+
+  Bai02.ipynb  — Data Visualization with Matplotlib (dữ liệu nhà California)
+                 Áp dụng nguyên lý trực quan hóa / EDA
+                 Dataset: ./data/housing.csv
+                 Câu hỏi chính: đặc trưng nào ảnh hưởng mạnh nhất đến
+                 gia_nha_trung_vi (median house value)?
+
+                 Nội dung:
+                 1. Import data
+                 2. Analyzing individual feature patterns
+                 3. Line plot
+                 4. Scatter plot
+                 5. Bar plot
+                 6. Histogram
+                 7. Subplots
+
+
+4. HOW TO COMPLETE
+--------------------------------------------------------------------------------
+- Điền code vào các ô:     # Write your code below...
+- Viết nhận xét vào các ô: # Write your conclusion
+- Chạy toàn bộ notebook, giữ output (bảng, biểu đồ) trong file nộp.
+- Không xóa đề bài / markdown sẵn có.
+- Tự làm; không copy nguyên đáp án từ lab.
+
+
+5. NỘP BÀI LÊN GIT / GIT SUBMISSION
+--------------------------------------------------------------------------------
+Đổi tên file trước khi push. Tên file bắt buộc:
+
+  Bai01.ipynb  -->  Prac02_Bai01.ipynb
+  Bai02.ipynb  -->  Prac02_Bai02.ipynb
+
+Ví dụ lệnh:
+
+  cp Bai01.ipynb Prac02_Bai01.ipynb
+  cp Bai02.ipynb Prac02_Bai02.ipynb
+
+  git add Prac02_Bai01.ipynb Prac02_Bai02.ipynb
+  git commit -m "Prac02: complete Bai01 (EDA) and Bai02 (visualization)"
+  git push
+
+Quy định:
+- Chỉ nộp Prac02_Bai01.ipynb và Prac02_Bai02.ipynb và hình ảnh chụp github sau push
+- File lab (Lab-*.ipynb) không đưa vào bài nộp.
+
+
+6. GRADING HINTS
+--------------------------------------------------------------------------------
+- Notebook chạy được từ đầu đến cuối, không lỗi.
+- Đủ code cho mọi câu hỏi.
+- Có nhận xét (conclusion) rõ, dựa trên kết quả vừa tính / vừa vẽ.
+- Áp dụng đúng nguyên lý đã học ở hai lab (wrangling + EDA).
+- Đúng tên file trên Git.
+
+
+================================================================================
+End
+================================================================================
