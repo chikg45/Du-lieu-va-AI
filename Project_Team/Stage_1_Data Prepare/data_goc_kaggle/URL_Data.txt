@@ -1,0 +1,2 @@
+Data cu: https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci
+Data moi: https://www.kaggle.com/datasets/carrie1/ecommerce-data
